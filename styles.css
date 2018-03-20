@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Anton');
+
+img {
+	max-width:100%;
+	display:inline-block;
+}
+
+ul {
+    list-style:none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.jumbotron {
+    padding: 0;
+    margin: 0;
+    background-image: url("http://thelifestyledirectory.com/wp-content/uploads/2014/09/ice-cream-close-up.jpg");
+    background-size: cover;
+}
+
+.btn.outline {
+    background: none;
+}
+
+.btn-primary.outline {
+    border: 2px solid black;
+    color: black;
+}
+
+.btn-primary.outline:hover {
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+}
+
+.borderr {
+    border-left: 5px dashed pink; 
+    border-right: 5px dashed pink;
+}
+
+@media (max-width: 992px) {
+    .card {
+        color: rgb(206, 45, 72);
+    }
+}
+
+@media (min-width: 600px) {
+    .pickle {
+        background-color: pink;
+    }
+}
+
+.jesus:hover {
+  color: green;
+}
+
+.doggie {
+    font-family: 'Anton', sans-serif;
+}
+
+.doggie:active {
+    color: purple;
+}
+
+.sharpie:before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    transition: all 2s ease;
+}
+
+.sharpie:hover:before {
+    width: 100%;
+}
+
+.ghost {
+    background: rgba(0,0,0,0);
+    color: #3a7999;
+    box-shadow: inset 0 0 0 3px #3a7999;
+}
+
+.silly:hover {
+    transform: skew(-10deg);
+}
+
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		transform: translateY(0);
+	}
+
+	40% {
+		transform: translateY(-20px);
+	}
+
+	80% {
+		transform: translateY(-10px);
+	}
+}
+
+.iphone:hover {
+    animation: bounce 1s;
+}
